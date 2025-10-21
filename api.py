@@ -1,5 +1,8 @@
 # 必要なPyhtonライブラリをインポート
 import boto3
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # AWS SDK for Pythonで、Bedrock用のAPIクライアントを作成
 client = boto3.client("bedrock-runtime")
